@@ -1,0 +1,4 @@
+<resources>
+    //Enter you Key
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">Enter-your-key</string>
+</resources>

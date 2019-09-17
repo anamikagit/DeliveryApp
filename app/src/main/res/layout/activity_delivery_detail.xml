@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.OrderListActivity">
+
+    <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:context=".ui.DeliveryDetailActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="0dp"
+            android:background="@color/cardBack">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:id="@+id/image"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:minHeight="100dp"
+                    android:minWidth="150dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/ic_default_image_back_24dp"
+                    android:padding="2dp"/>
+
+            <TextView
+                    android:id="@+id/deliveryDiscription"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    tools:text="Deliver documents to Andrio to the on the other edn sljdlfjdfl fljdfl fldf d "
+                    android:paddingTop="7dp"
+                    android:padding="5dp"
+                    android:textSize="20sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
